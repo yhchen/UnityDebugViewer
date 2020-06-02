@@ -630,7 +630,7 @@ namespace UnityDebugViewer
                     var log = this.editorManager.activeEditor.selectedLog;
                     if (log != null && this.logFilter.ShouldDisplay(log))
                     {
-                        string logFullMessage = string.Format("{0}\n{1}\n", log.info, log.extraInfo);
+                        string logFullMessage = string.Format("{0}\n{1}", log.info, log.extraInfo);
                         var logFullMessageAreaGUIContent = new GUIContent(logFullMessage);
                         this.logFullMessageAreaHeight = UnityDebugViewerWindowStyleUtility.logFullMessageAreaStyle.CalcHeight(logFullMessageAreaGUIContent, this.lowerPanelRect.width);
 
